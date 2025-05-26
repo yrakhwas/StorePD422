@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-sm-2" type="search" placeholder="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-3">
+
+<form>
+    <h1 class="text-center">Create New Product</h1>
+  <fieldset>    
+    <div class="row">
+        <div class="col form-group col-4">
+            <label for="modelInput" class="form-label mt-4">Model</label>
+            <input type="text" class="form-control" id="modelInput" placeholder="Enter model">
+        </div>
+        <div class="col form-group col-6">
+            <label for="descriptionInput" class="form-label mt-4">Description</label>
+            <input type="text" class="form-control" id="descriptionInput" placeholder="Enter description">
+        </div>
+        <div class="col form-group col-2">
+            <label for="priceInput" class="form-label mt-4">Price</label>
+            <input type="text" class="form-control" id="priceInput" placeholder="Enter price">
+        </div>
+    </div> 
+    <button type="submit" class="btn btn-primary mt-4" id="create-btn">Create</button>
+    </fieldset>   
+
+</form>
+<h2 class="mt-4">Product List</h2>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Model</th>
+      <th scope="col">Description</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody id="table-body"> 
+    <!-- <tr class="table-light">
+      <th scope="row">1</th>
+      <td>Iphone 16</td>
+      <td>Lorem ipsum dolor sit amet.</td>
+      <td>900$</td>
+    </tr>   -->
+  </tbody>
+</table>
+<button type="button" class="btn btn-danger mt-3" id="delete-btn">Delete All</button>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
