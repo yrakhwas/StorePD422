@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap.css">
+    <style>
+      nav {
+        transition: all .3s;
+      }
+    </style>
 </head>
 <body>
     <nav id="navbar" class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
@@ -44,6 +49,7 @@
         <input class="form-control me-sm-2" type="search" placeholder="Search">
         <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
       </form>
+      <button type="button" class="btn btn-dark" id="theme-btn">Light</button>
     </div>
   </div>
 </nav>
@@ -92,7 +98,7 @@
 </table>
 <button type="button" class="btn btn-danger mt-3" id="delete-btn">Delete All</button>
 <hr>
-<button type="button" class="btn btn-dark" id="theme-btn">Light</button>
+
 </div>
 
 <script src="main.js"></script>

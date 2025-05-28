@@ -10,7 +10,7 @@ const themeBtn = document.getElementById("theme-btn");
 
 const nav = document.getElementById("navbar");
 
-
+const buttons = document.getElementsByClassName("btn");
 
 
 
@@ -19,12 +19,15 @@ let products = [];
 themeBtn.onclick = (event) =>{
     event.preventDefault();
     console.log("Theme button clicked");
+    nav.getAttributeNames("data-bs-theme") === "dark" ? "light" : "dark";
    if(themeBtn.innerHTML == "Light") 
    {
     themeBtn.innerHTML = "Dark";
     nav.classList.remove("bg-light");
 
     nav.classList.add("bg-dark");
+
+    
 
    }
    else
@@ -43,6 +46,13 @@ deleteBtn.onclick = ()=>
 {
     products = [];
     tableBody.innerHTML = "";
+
+    // for (let i = 0; i < buttons.length; i++) {
+    //     buttons[i].classList.remove("btn-primary");
+    //     buttons[i].classList.add("btn-danger");
+    //     buttons[i].innerHTML = "Clicked";
+    // }
+
 }
 
 function addProductToTable(product)
